@@ -1,0 +1,31 @@
+{
+    "apps": [
+        {
+            "name": "multiplier",
+            "script": "build/multiplier.js",
+            "args": "",
+            "node_args": "--es-module-specifier-resolution=node",
+            "time": true,
+            "exec_mode": "fork",
+            "env_production": {
+                "NODE_ENV": "production"
+            }
+        },
+        {
+            "name": "multiplier-dev",
+            "script": "build/multiplier.js",
+            "args": "",
+            "node_args": "--es-module-specifier-resolution=node --trace-warnings",
+            "time": false,
+            "exec_mode": "fork",
+            "watch": true,
+            "ignore_watch": [
+                ".git",
+                ".deploy",
+                ".parcel-cache",
+                ".vscode",
+                "src"
+            ]
+        }
+    ]
+}

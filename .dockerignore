@@ -1,0 +1,7 @@
+.git
+.gitignore
+.parcel-cache
+.vscode
+Makefile
+node_modules
+package-lock.json
